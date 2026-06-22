@@ -1,0 +1,57 @@
+backend:
+  name: github
+  repo: neuroatypik78860/neuro-atypik
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "agenda"
+    label: "📅 Agenda — Dates à retenir"
+    files:
+      - label: "Dates à retenir"
+        name: "agenda"
+        file: "_data/agenda.json"
+        fields:
+          - label: "Événements"
+            name: "events"
+            widget: "list"
+            fields:
+              - { label: "Jour", name: "day", widget: "string", hint: "Ex: 16" }
+              - { label: "Mois", name: "month", widget: "string", hint: "Ex: Juin" }
+              - { label: "Catégorie", name: "tag", widget: "string", hint: "Ex: Boost'Parents" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Couleur"
+                name: "color"
+                widget: "select"
+                options:
+                  - { label: "Rose (Boost'Parents)", value: "pink" }
+                  - { label: "Vert (Événement local)", value: "green" }
+                  - { label: "Bleu (Sensibilisation)", value: "blue" }
+
+  - name: "equipe"
+    label: "👥 Équipe — Biographies"
+    files:
+      - label: "Membres du bureau"
+        name: "equipe"
+        file: "_data/equipe.json"
+        fields:
+          - label: "Membres"
+            name: "members"
+            widget: "list"
+            fields:
+              - { label: "Nom", name: "name", widget: "string" }
+              - { label: "Rôle", name: "role", widget: "string" }
+              - { label: "Biographie (hover)", name: "bio", widget: "text" }
+
+  - name: "annonces"
+    label: "📢 Annonces — Bandeau d'info"
+    files:
+      - label: "Annonce principale"
+        name: "annonce"
+        file: "_data/annonce.json"
+        fields:
+          - { label: "Texte de l'annonce", name: "text", widget: "string", hint: "Laisser vide pour masquer le bandeau" }
+          - { label: "Afficher le bandeau", name: "visible", widget: "boolean", default: false }

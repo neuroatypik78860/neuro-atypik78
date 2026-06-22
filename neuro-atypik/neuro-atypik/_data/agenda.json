@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "day": "12",
+      "month": "Juin",
+      "tag": "Sensibilisation",
+      "title": "Journée Mondiale du TDAH",
+      "description": "Journée internationale de sensibilisation au TDAH. Neuro Atypik 78 partage des ressources et informations sur ses réseaux sociaux.",
+      "color": "blue"
+    },
+    {
+      "day": "Sep",
+      "month": "2026",
+      "tag": "Boost'Parents",
+      "title": "Prochaine soirée Boost'Parents",
+      "description": "La prochaine soirée Boost'Parents aura lieu courant septembre. Nous reviendrons vers vous pour la date exacte.",
+      "color": "pink"
+    },
+    {
+      "day": "05",
+      "month": "Sep",
+      "tag": "Événement local",
+      "title": "Forum des associations — Saint-Nom-La-Bretèche",
+      "description": "Retrouvez-nous au forum des associations de Saint-Nom-La-Bretèche de 14h à 18h. Venez nous rencontrer !",
+      "color": "green"
+    }
+  ]
+}
