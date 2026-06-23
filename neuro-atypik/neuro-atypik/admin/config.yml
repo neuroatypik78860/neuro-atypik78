@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: neuroatypik78860/neuro-atypik
+  name: git-gateway
   branch: main
 
 media_folder: "images"
