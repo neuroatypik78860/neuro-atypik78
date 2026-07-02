@@ -9,20 +9,20 @@
       "color": "blue"
     },
     {
-      "day": "15",
-      "month": "Sep",
-      "tag": "Boost'Parents",
-      "title": "Présentation de l'association",
-      "description": "Nous vous présenterons l'association autour d'un apéritif pink",
-      "color": "pink"
-    },
-    {
       "day": "05",
       "month": "Sep",
       "tag": "Événement local",
       "title": "Forum des associations — Saint-Nom-La-Bretèche",
       "description": "Retrouvez-nous au forum des associations de Saint-Nom-La-Bretèche de 14h à 18h. Venez nous rencontrer !",
       "color": "green"
+    },
+    {
+      "day": "15",
+      "month": "Sep",
+      "tag": "Boost'Parents",
+      "title": "Présentation de l'association",
+      "description": "Nous vous présenterons l'association autour d'un apéritif pink",
+      "color": "pink"
     }
   ]
 }
