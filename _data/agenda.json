@@ -1,12 +1,12 @@
 {
   "events": [
     {
-      "day": "15",
+      "day": "05",
       "month": "Septembre",
-      "title": "Présentation de l'association",
-      "description": "Nous vous présenterons l'association autour d'un apéritif",
-      "color": "pink",
-      "tag": "Boost'Parents"
+      "title": "Forum des associations — Feucherolles",
+      "description": "Retrouvez nous au forum des associations de Feucherolles de 14h à 18h. \nVenez nous rencontrer !",
+      "color": "green",
+      "tag": "Événement local"
     }
   ]
 }
