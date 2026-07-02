@@ -932,42 +932,60 @@
 <section class="dates-section" id="dates">
   <div class="section-label">À venir</div>
   <h2>Dates à <em>retenir</em></h2>
-  <div class="dates-grid">
-    <div class="date-card">
-      <div class="date-block">
-        <div class="date-day">12</div>
-        <div class="date-month">Juin</div>
-      </div>
-      <div class="date-content">
-        <div class="date-tag">Sensibilisation</div>
-        <h3>Journée nationale de sensibilisation au TDAH</h3>
-        <p>Journée nationale dédiée à la sensibilisation du grand public aux troubles du déficit de l'attention.</p>
-      </div>
-    </div>
-    <div class="date-card pink">
-      <div class="date-block">
-        <div class="date-day">Sep</div>
-        <div class="date-month">2026</div>
-      </div>
-      <div class="date-content">
-        <div class="date-tag">Boost'Parents</div>
-        <h3>Prochaine soirée Boost'Parents</h3>
-        <p>La prochaine soirée Boost'Parents aura lieu courant septembre. Nous reviendrons vers vous pour la date exacte.</p>
-      </div>
-    </div>
-    <div class="date-card green">
-      <div class="date-block">
-        <div class="date-day">05</div>
-        <div class="date-month">Sep</div>
-      </div>
-      <div class="date-content">
-        <div class="date-tag">Événement local</div>
-        <h3>Forum des associations — Saint-Nom-La-Bretèche</h3>
-        <p>Retrouvez-nous au forum des associations de Saint-Nom-La-Bretèche de <strong>14h à 18h</strong>. Venez nous rencontrer !</p>
-      </div>
-    </div>
+  <div class="dates-grid" id="dates-grid">
+    <!-- Chargé dynamiquement depuis _data/agenda.json -->
   </div>
 </section>
+
+<script>
+(function() {
+  const colorMap = {
+    'pink': 'pink',
+    'rose': 'pink',
+    'vert': 'green',
+    'green': 'green',
+    'blanc': '',
+    'white': '',
+    'bleu': '',
+    'blue': ''
+  };
+
+  function renderEvents(events) {
+    const grid = document.getElementById('dates-grid');
+    if (!grid) return;
+    if (!events || events.length === 0) {
+      grid.innerHTML = '<p style="color:#5a4a3a;font-size:0.95rem;">Aucun événement à venir pour le moment.</p>';
+      return;
+    }
+    grid.innerHTML = events.map(function(ev) {
+      const colorClass = colorMap[ev.color] || '';
+      return `
+        <div class="date-card ${colorClass}">
+          <div class="date-block">
+            <div class="date-day">${ev.day || ''}</div>
+            <div class="date-month">${ev.month || ''}</div>
+          </div>
+          <div class="date-content">
+            <div class="date-tag">${ev.tag || ''}</div>
+            <h3>${ev.title || ''}</h3>
+            <p>${ev.description || ''}</p>
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  fetch('/_data/agenda.json')
+    .then(function(r) { return r.json(); })
+    .then(function(data) { renderEvents(data.events || []); })
+    .catch(function() {
+      // Fallback : événements par défaut si le fichier n'est pas encore disponible
+      renderEvents([
+        { day: '12', month: 'Juin', tag: 'Sensibilisation', title: 'Journée nationale de sensibilisation au TDAH', description: 'Journée nationale dédiée à la sensibilisation du grand public aux troubles du déficit de l\'attention.', color: '' },
+        { day: '05', month: 'Sep', tag: 'Événement local', title: 'Forum des associations — Saint-Nom-La-Bretèche', description: 'Retrouvez-nous au forum des associations de Saint-Nom-La-Bretèche de <strong>14h à 18h</strong>. Venez nous rencontrer !', color: 'green' }
+      ]);
+    });
+})();
+</script>
 
 
 <!-- MISSIONS -->
