@@ -1,0 +1,12 @@
+{
+  "events": [
+    {
+      "day": "15",
+      "month": "Septembre",
+      "title": "Présentation de l'association",
+      "description": "Nous vous présenterons l'association autour d'un apéritif",
+      "color": "pink",
+      "tag": "Boost'Parents"
+    }
+  ]
+}
