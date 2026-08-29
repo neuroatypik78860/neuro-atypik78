@@ -1,19 +1,11 @@
- {
+{
   "events": [
-    {
-      "day": "12",
-      "month": "Juin",
-      "tag": "Sensibilisation",
-      "title": "Journée nationale de sensibilisation au TDAH",
-      "description": "Journée nationale dédiée à la sensibilisation du grand public aux troubles du déficit de l'attention.",
-      "color": "blue"
-    },
     {
       "day": "05",
       "month": "Sep",
       "tag": "Événement local",
       "title": "Forum des associations — Saint-Nom-La-Bretèche",
-      "description": "Retrouvez-nous au forum des associations de Saint-Nom-La-Bretèche de 14h à 18h. Venez nous rencontrer !",
+      "description": "Retrouvez-nous au forum des associations de Saint-Nom-La-Bretèche de 9h à 13h. Venez nous rencontrer !",
       "color": "green"
     },
     {
@@ -22,6 +14,14 @@
       "tag": "Événement local",
       "title": "Forum des associations — Feucherolles",
       "description": "Retrouvez-nous au forum des associations de Feucherolles de 14h à 18h. Venez nous rencontrer !",
+      "color": "green"
+    },
+    {
+      "day": "05",
+      "month": "Sep",
+      "tag": "Événement local",
+      "title": "Forum des associations — L'Étang-la-Ville",
+      "description": "Retrouvez-nous au forum des associations de l'Étang-la-Ville de 10h à 16h. Venez nous rencontrer !",
       "color": "green"
     },
     {
