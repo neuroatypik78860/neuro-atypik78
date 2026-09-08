@@ -5,7 +5,15 @@
       "month": "Sep",
       "tag": "Boost'Parents",
       "title": "Présentation de l'association",
-      "description": "Nous vous présenterons l'association autour d'un apéritif",
+      "description": "Nous vous présenterons l'association autour d'un apéritif pink",
+      "color": "pink"
+    },
+    {
+      "day": "13",
+      "month": "Oct",
+      "tag": "Boost'Parents",
+      "title": "5ème rencontre Boost'Parents",
+      "description": "Rejoignez-nous pour notre 5ème rencontre Boost'Parents !",
       "color": "pink"
     }
   ]
