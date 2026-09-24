@@ -1,12 +1,28 @@
 {
   "events": [
     {
-    "day": "13",
+      "day": "13",
       "month": "Oct",
       "tag": "Boost'Parents",
       "title": "5ème rencontre Boost'Parents",
       "description": "Rejoignez-nous pour notre 5ème rencontre Boost'Parents !",
       "color": "pink"
+    },
+    {
+      "day": "10",
+      "month": "Nov",
+      "tag": "Boost'Parents",
+      "title": "6ème rencontre Boost'Parents",
+      "description": "Rejoignez-nous pour notre 6ème rencontre Boost'Parents !",
+      "color": "pink"
+    },
+    {
+      "day": "18",
+      "month": "Nov",
+      "tag": "Atelier",
+      "title": "1er atelier Neuro Atypik 78 : Méthode Barkley",
+      "description": "Venez découvrir notre premier atelier consacré à la Méthode Barkley.",
+      "color": "blue"
     }
   ]
 }
