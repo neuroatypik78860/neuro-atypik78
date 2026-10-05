@@ -1,5 +1,11 @@
-{
-  "events": [
+    {
+      "day": "06",
+      "month": "Oct",
+      "tag": "Atelier",
+      "title": "Présentation de l'atelier Sophrologie",
+      "description": "Présentation en visioconférence à partir de 21h.",
+      "color": "blue"
+    },
     {
       "day": "13",
       "month": "Oct",
@@ -7,6 +13,14 @@
       "title": "5ème rencontre Boost'Parents",
       "description": "Rejoignez-nous pour notre 5ème rencontre Boost'Parents !",
       "color": "pink"
+    },
+    {
+      "day": "28",
+      "month": "Oct",
+      "tag": "Atelier",
+      "title": "Atelier ferme pédagogique et médiation par l'animal",
+      "description": "2 sessions : le matin à partir de 10h et l'après-midi à partir de 14h30.",
+      "color": "blue"
     },
     {
       "day": "10",
@@ -24,5 +38,3 @@
       "description": "Venez découvrir notre premier atelier consacré à la Méthode Barkley.",
       "color": "blue"
     }
-  ]
-}
