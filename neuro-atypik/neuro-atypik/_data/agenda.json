@@ -1,4 +1,5 @@
     {
+    {
       "day": "06",
       "month": "Oct",
       "tag": "Atelier",
@@ -38,3 +39,5 @@
       "description": "Venez découvrir notre premier atelier consacré à la Méthode Barkley.",
       "color": "blue"
     }
+  ]
+}
